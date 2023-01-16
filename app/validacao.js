@@ -16,11 +16,15 @@ function validaChute(chute) {
     <h3>O número secreto era ${numeroSecreto}</h3>
     <button id="jogar-novamente" class="btn-jogar" type="">Jogar novamente</button>`;
   } else if (numero > numeroSecreto) {
-    elementochute.innerHTML = `<div>
+    elementochute.innerHTML = `
+    <div>Você disse:</div>
+    <span class= "box">${chute}</span><div>
     O número secreto é menor <i class="fa-solid fa-arrows-down-to-line"></i> 
   </div>`;
   } else {
-    elementochute.innerHTML = `<div>
+    elementochute.innerHTML = `
+    <div>Você disse:</div>
+    <span class= "box">${chute}</span><div>
     O número secreto é maior <i class="fa-solid fa-arrows-up-to-line"></i> 
   </div>`;
   }
@@ -32,6 +36,7 @@ function numeroNaoPermitido(numero) {
 
 document.body.addEventListener("click", (e) => {
   if (e.target.id == "jogar-novamente") {
-    window.location.reload(); // Em JavaScript, "window" representa a janela aberta no navegador. Já "location", nessa linguagem, contém informações sobre a URL atual. Por último, "reload()" é usado para recarregar a página.
+    window.location.reload(); // Em JavaScript, "window" representa a janela aberta no navegador.
+    //Já "location", nessa linguagem, contém informações sobre a URL atual. Por último, "reload()" é usado para recarregar a página.
   }
 });
