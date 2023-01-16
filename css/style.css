@@ -40,3 +40,11 @@ h3 {
   display: inline-block;
   margin: 20px;
 }
+
+.btn-jogar {
+  padding: 8px 15px;
+  background-color: var(--primary-color);
+  border: 0;
+  border-radius: 5px;
+  margin-top: 20px;
+}
