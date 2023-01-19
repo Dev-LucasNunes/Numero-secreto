@@ -48,3 +48,13 @@ h3 {
   border-radius: 5px;
   margin-top: 20px;
 }
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 6em;
+  }
+
+  h3 {
+    font-size: 4em;
+  }
+}
